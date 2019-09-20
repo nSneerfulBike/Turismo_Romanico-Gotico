@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Guida Turistica Romanico-Gotico in Europa</title>
+        <link rel="icon" href="res/png/icon.png">
+        
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/first-box.css">
+        <link rel="stylesheet" href="stylesheets/half-page.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    </head>
+
+    <body>
+
+        <div id="map"></div>
+        <div id="first-box">
+            <h2 id="benvenuto" class="unselect">Guida Turistica Romanico-Gotico in Europa</h2>
+            <button id="map-filterer" class="foo-button mdc-fab mdc-fab--extended">
+              <span class="material-icons mdc-fab__icon">filter_list</span>
+              <span class="mdc-fab__label">Filtra Mappa</span>
+            </button>
+        </div>
+
+        <div id="filter-selector" class="unselect">
+
+            <h1 id="filter-title" class="unselect">Filtra Mappa</h1>
+
+            <div id="checkbox-container">
+
+                <div id="checkbox-romanico" class="mdc-form-field">
+                    <div class="mdc-checkbox">
+                    <input type="checkbox"
+                            class="ck_box mdc-checkbox__native-control"
+                            id="checkbox-1" checked/>
+                    <div class="mdc-checkbox__background">
+                        <svg class="mdc-checkbox__checkmark"
+                            viewBox="0 0 24 24">
+                        <path class="mdc-checkbox__checkmark-path"
+                                fill="none"
+                                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                        </svg>
+                        <div class="mdc-checkbox__mixedmark"></div>
+                    </div>
+                    </div>
+                    <label for="checkbox-1" class="unselect" id="ckbox-1">Romanico</label>
+                </div>
+            
+                <br>
+            
+                <div id="checkbox-gotico" class="mdc-form-field">
+                    <div class="mdc-checkbox">
+                    <input type="checkbox"
+                            class="mdc-checkbox__native-control"
+                            id="checkbox-2" checked/>
+                    <div class="mdc-checkbox__background">
+                        <svg class="mdc-checkbox__checkmark"
+                            viewBox="0 0 24 24">
+                        <path class="mdc-checkbox__checkmark-path"
+                                fill="none"
+                                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                        </svg>
+                        <div class="mdc-checkbox__mixedmark"></div>
+                    </div>
+                    </div>
+                    <label for="checkbox-2" class="unselect" id="ckbox-2">Gotico</label>
+                </div>
+            
+                <br>
+            
+                <div id="checkbox-pertinenti" class="mdc-form-field">
+                    <div class="mdc-checkbox">
+                    <input type="checkbox"
+                            class="mdc-checkbox__native-control"
+                            id="checkbox-3"/>
+                    <div class="mdc-checkbox__background">
+                        <svg class="mdc-checkbox__checkmark"
+                            viewBox="0 0 24 24">
+                        <path class="mdc-checkbox__checkmark-path"
+                                fill="none"
+                                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                        </svg>
+                        <div class="mdc-checkbox__mixedmark"></div>
+                    </div>
+                    </div>
+                    <label for="checkbox-3" class="unselect" id="ckbox-3">Più pertinenti</label>
+                </div>
+
+                <br>
+
+                <div id="checkbox-pellegrinaggio" class="mdc-form-field">
+                    <div class="mdc-checkbox">
+                    <input type="checkbox"
+                            class="mdc-checkbox__native-control"
+                            id="checkbox-4"/>
+                    <div class="mdc-checkbox__background">
+                        <svg class="mdc-checkbox__checkmark"
+                            viewBox="0 0 24 24">
+                        <path class="mdc-checkbox__checkmark-path"
+                                fill="none"
+                                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                        </svg>
+                        <div class="mdc-checkbox__mixedmark"></div>
+                    </div>
+                    </div>
+                    <label for="checkbox-4" class="unselect" id="ckbox-4">Mete di pellegrinaggio (Romanico)</label>
+                </div>
+
+            </div>
+
+            <button id="filter-done" class="mdc-button mdc-button--raised">Fatto</button>
+
+        </div>
+        <div id="scuro"></div>
+
+        <div id="guide" class="circle unselect" onclick="location.href = 'https://www.google.it'">
+            <div class="img-cont">
+                <img id="guide-img" class="inner-img" src="res/svg/guide.svg" draggable="false">
+                <h2 id="guide-img-txt" class="img-txt">Nibber</h2>
+            </div>
+        </div>
+        <div id="turism-container" class="unselect">
+            <div id="romanico" class="circle" onclick="location.href = 'ROMANICO/romanico.html'">
+                <div class="img-cont">
+                    <img id="romnc-img" class="inner-img" src="res/svg/romanico.svg" draggable="false">
+                    <h2 id="romnc-img-txt" class="img-txt">Romanico</h2>
+                </div>
+            </div>
+            <div id="gotico" class="circle" onclick="location.href = 'GOTICO/gotico.html'">
+                <div class="img-cont">
+                    <img id="gotc-img" class="inner-img" src="res/svg/gotico.svg" draggable="false">
+                    <h2 id="gotc-img-txt" class="img-txt">Gotico</h2>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/script.js"></script>
+        <script src="scripts/halfpage.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAblJU4p4LC5QqcDLOU-f89928S2-khfdE&callback=initMap"></script>
+        
+    </body>
+
+</html>
