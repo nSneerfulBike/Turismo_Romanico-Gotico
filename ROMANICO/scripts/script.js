@@ -83,13 +83,13 @@ for (let el0 of all) {
             //Calcola grandezza del testo
 
             document.getElementById('p-title').style.fontSize = '30px';
-            if (el1 === document.getElementById('mont-saint-michel') ||
+            if (window.innerWidth < 800 && (el1 === document.getElementById('mont-saint-michel') ||
                 el1 === document.getElementById('san-pietro-di-moissac') ||
                 el1 === document.getElementById('sant-ambrogio') ||
                 el1 === document.getElementById('san-clemente') ||
                 el1 === document.getElementById('santiago-de-compostela') ||
                 el1 === document.getElementById('san-michele-maggiore') ||
-                el1 === document.getElementById('san-giovanni')) {
+                el1 === document.getElementById('san-giovanni'))) {
 
                 document.getElementById('p-title').style.fontSize = '22px';
 

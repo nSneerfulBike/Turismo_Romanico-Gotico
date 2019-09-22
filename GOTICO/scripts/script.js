@@ -72,11 +72,10 @@ for (let el0 of all) {
             el1.style.backgroundColor = '#3a495c';
 
             //Calcola grandezza del testo
-
             document.getElementById('p-title').style.fontSize = '30px';
-            if (el1 === document.getElementById('basilica-di-santa-maria-novella') ||
+            if (window.innerWidth < 800 && (el1 === document.getElementById('basilica-di-santa-maria-novella') ||
                 el1 === document.getElementById('cattedrale-di-notre-dame') ||
-                el1 === document.getElementById('basilica-di-sant-antonio-di-padova')) {
+                el1 === document.getElementById('basilica-di-sant-antonio-di-padova'))) {
         
                 document.getElementById('p-title').style.fontSize = '22px';
         
