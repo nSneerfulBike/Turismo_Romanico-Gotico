@@ -4,6 +4,9 @@ var order = {
 };
 
 var isFirstTime = true;
+var isNotreDame = false;
+let audio = document.createElement('audio');
+audio.autoplay = true;
 
 var _1row = document.getElementById('first-row');
 var _2row = document.getElementById('second-row');
@@ -67,6 +70,28 @@ for (let el0 of all) {
 
             }
             el1.style.backgroundColor = '#3a495c';
+
+            // Start the audio
+            if (el1 === document.getElementById('cattedrale-di-notre-dame')) {
+
+                if (!isNotreDame) {
+
+                    audio.src = '';
+                    isNotreDame = true;
+
+                } else {
+
+                    audio.src = '../res/mp3/audio.mp3';
+                    isNotreDame = false;
+
+                }
+
+            } else {
+
+                audio.src = '';
+                isNotreDame = false;
+
+            }
 
             // Determine the element row
 
