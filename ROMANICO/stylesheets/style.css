@@ -145,7 +145,7 @@ h1.inner-txt {
     height: 40px;
     position: absolute;
     transform-origin: 50% 50%;
-    transform: rotate(180deg) translate(20px, 0);
+    transform: rotate(180deg) translate(20px, -2px);
     top: 210px;
 
     transition: opacity 0.15s linear;
