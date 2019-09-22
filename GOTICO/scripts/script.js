@@ -77,7 +77,7 @@ for (let el0 of all) {
                 el1 === document.getElementById('cattedrale-di-notre-dame') ||
                 el1 === document.getElementById('basilica-di-sant-antonio-di-padova'))) {
         
-                document.getElementById('p-title').style.fontSize = '22px';
+                document.getElementById('p-title').style.fontSize = '20px';
         
             }
 

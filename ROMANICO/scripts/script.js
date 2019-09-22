@@ -91,7 +91,7 @@ for (let el0 of all) {
                 el1 === document.getElementById('san-michele-maggiore') ||
                 el1 === document.getElementById('san-giovanni'))) {
 
-                document.getElementById('p-title').style.fontSize = '22px';
+                document.getElementById('p-title').style.fontSize = '20px';
 
             }
 
