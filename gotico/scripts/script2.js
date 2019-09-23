@@ -63,3 +63,26 @@ for (let i = 0; i < 8; i++) {
     });
 
 }
+
+// location.href dell'immagine
+let img_ = document.getElementById('image');
+var locations_ = [
+    'https://maps.app.goo.gl/5Mkq2Ang97QPNMiMA', 'https://maps.app.goo.gl/eSTQkreXE8PykEsJ8', 'https://maps.app.goo.gl/pb6nv4ePKzwNq2SF6', 'https://maps.app.goo.gl/tKT2mrRe5K2MssSMA',
+    'https://maps.app.goo.gl/jFArYtVNefL2v5256', 'https://maps.app.goo.gl/FNKbcvhgDqz5p4vH7', 'https://maps.app.goo.gl/yEBLsV9zAYLihrF89', 'https://maps.app.goo.gl/PVeBkWZ9Uyv1BtVm6'
+];
+
+for (let i = 0; i < 8; i++) {
+
+    chiese_html[i].addEventListener('click', () => {
+
+        document.getElementById('link-txt').href = locations_[i];
+
+    });
+
+}
+
+img_.addEventListener('click', () => {
+
+    document.getElementById('link-txt').click();
+
+});

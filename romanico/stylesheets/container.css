@@ -18,6 +18,8 @@
 
     transition: width 0.25s linear;
 
+    cursor: pointer;
+
 }
 
 #p-text {
@@ -84,6 +86,13 @@ br::selection {
 
     #image {
         width: 100%;
+    }
+
+    #p-text {
+
+        margin-right: 20px;
+        margin-left: 20px;
+
     }
 
 }

@@ -94,3 +94,27 @@ for (let i = 0; i < 15; i++) {
     });
 
 }
+
+// location.href dell'immagine
+let img_ = document.getElementById('image');
+var locations_ = [
+    'https://maps.app.goo.gl/HtUaKmcDw24uxaop7', 'https://maps.app.goo.gl/baUta3aqX91xXCFu7', 'https://maps.app.goo.gl/gbtdheQKStSKgHSG7', 'https://maps.app.goo.gl/SHo5aL36BXP39wX47', 'https://maps.app.goo.gl/KsYpuRdQ1nuSYuAt7',
+    'https://maps.app.goo.gl/3a3zHWUabv5VUECC6', 'https://maps.app.goo.gl/rcuAydhLf4x732839', 'https://maps.app.goo.gl/eUnoNmb9nN6YPEAX8', 'https://maps.app.goo.gl/AfMUrFYChuK7AewN6', 'https://maps.app.goo.gl/vMpNZamqUdVP93PE9',
+    'https://maps.app.goo.gl/aRdK2Fj6HVbZb6gr5', 'https://maps.app.goo.gl/2pL9xnM7So9UVM5t5', 'https://maps.app.goo.gl/pMxtoWaNhFonvW6s8', 'https://maps.app.goo.gl/YrRkvEANduYpWApX7', 'https://maps.app.goo.gl/ct4vc9a2GKy9NHux6'
+];
+
+for (let i = 0; i < 15; i++) {
+
+    chiese_html[i].addEventListener('click', () => {
+
+        document.getElementById('link-txt').href = locations_[i];
+
+    });
+
+}
+
+img_.addEventListener('click', () => {
+
+    document.getElementById('link-txt').click();
+
+});

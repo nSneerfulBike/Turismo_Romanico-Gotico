@@ -17,6 +17,8 @@
 
     transition: width 0.25s linear;
 
+    cursor: pointer;
+
 }
 
 #p-text {
@@ -89,6 +91,13 @@ i::selection {
 
     #image {
         width: 100%;
+    }
+
+    #p-text {
+
+        margin-right: 20px;
+        margin-left: 20px;
+
     }
 
 }
