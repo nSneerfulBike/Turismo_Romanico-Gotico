@@ -50,7 +50,7 @@ header {
     display: flex;
     flex-direction: column;
 
-    box-shadow: 1px 1px 5px #222640, -1px -1px 5px #222640, 1px -1px 5px #222640, -1px 1px 5px #222640;
+    box-shadow: 1px 1px 5px #1d2530bb, -1px -1px 5px #1d2530bb, 1px -1px 5px #1d2530bb, -1px 1px 5px #1d2530bb;
     margin: 20px 2px;
 
 }

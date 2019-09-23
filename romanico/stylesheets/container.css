@@ -9,6 +9,12 @@
 
 }
 
+#p-title::selection {
+
+    background-color: #d5d5d5;
+
+}
+
 #image {
 
     float: right;

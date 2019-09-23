@@ -127,6 +127,10 @@ h1.inner-txt {
     border: 2px solid #f5f5f5;
     transform: translate(-1px, 0);
 
+    user-select: text;
+    -ms-user-select: text;
+    -moz-user-select: text;
+
 }
 
 #arrow {
