@@ -96,3 +96,13 @@ br::selection {
     }
 
 }
+
+@media (max-width: 800px) {
+
+    #p-title {
+
+        font-size: 20px;
+
+    }
+
+}
