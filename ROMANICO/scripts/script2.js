@@ -8,7 +8,7 @@ const Antimo = {
 };
 const Moissac = {
     title: 'Abbazia di San Pietro di Moissac',
-    text: ''
+    text: 'Quella di Moissac, dedicata a San Pietro, è una chiesa abbaziale situata in Francia, nel comune di Moissac, e presenta nella parte inferiore in pietra con caratteristiche romaniche, mentre la parte superiore, in mattoni, ha caratteristiche gotiche. La particolarità di questa chiesa è il suo portale:<br>Il portale si presenta con una lunetta superiore realizzata in pietra, che presenta la visione di San Giovanni evangelista descritta nell\'Apocalisse. Al centro di questa lunetta troviamo il Cristo, con, al suo fianco, il tetramorfo. A circondare la scena, vi sono, ai lati e nella parte inferiore, ventiquattro vegliardi dotati di strumenti musicali e coppe, tutti rivolti verso il Cristo allo scopo di mettere in rilievo la scena centrale. Sull\'architrave, dunque nella parte inferiore della lunetta, vi sono le ruote infuocate, emblema del fuoco infernale. Il trumeau presenta invece sulla faccia delle figure di leoni addossati che si incrociano; sui lati vi sono il profeta Geremia e San Paolo, che si completano con Isaia e San Pietro sugli stipiti del portale.'
 };
 const Ambrogio = {
     title: 'Basilica di Sant\'Ambrogio',

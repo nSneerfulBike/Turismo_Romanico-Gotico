@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+
+    background-color: #242f3d;
+    margin: 0;
+    font-family: 'Open Sans';
+
+}
+
+body::-webkit-scrollbar {
+
+    width: 5px;
+    background-color: #454545;
+    border-radius: 3px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+
+    width: 5px;
+    border-radius: 3px;
+    background-color: #d5d5d5;
+
+}
+
+header {
+
+    height: 150px;
+    background-color: #0075db;
+
+}
+
+.p-container {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 900px;
+
+}
+
+.par {
+
+    background-color: #3a495c;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 1px 1px 5px #222640, -1px -1px 5px #222640, 1px -1px 5px #222640, -1px 1px 5px #222640;
+    margin: 20px 2px;
+
+}
+
+.par:first-child {
+
+    margin-top: 40px;
+
+}
+
+.par:last-child {
+
+    margin-bottom: 40px;
+
+}
+
+.p-img {
+
+    order: 1;
+
+    height: 300px;
+    border-radius: 10px;
+    object-position: center;
+
+}
+
+.p-title {
+
+    order: -3;
+    color: #fafafa;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+    font-weight: 400;
+
+}
+
+.p-text {
+
+    order: -2;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #c0c1cc;
+    text-align: justify;
+
+}
+
+.text {
+
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+
+    user-select: text;
+
+}
+
+.p-text::selection, .p-title::selection {
+
+    background-color: #d5d5d5;
+
+}
+
+.p1 {
+
+    animation: p1par .75s ease-in-out;
+
+}
+
+.p2 {
+
+    animation: p2par .75s ease-in-out;
+
+}
+
+.unselect {
+
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+
+}
+
+@keyframes p1par {
+
+    0% {
+
+        transform: translate(-50px, 0);
+        opacity: .25;
+        
+    }
+    100% {
+
+        transform: translate(0, 0);
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes p2par {
+
+    0% {
+
+        transform: translate(50px, 0);
+        opacity: .25;
+        
+    }
+    100% {
+
+        transform: translate(0, 0);
+        opacity: 1;
+
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    .par {
+
+        flex-direction: row;
+
+    }
+
+    .p-container {
+
+        margin: 0 auto;
+
+    }
+
+    .p-img {
+
+        width: 250%;
+        height: auto;
+
+    }
+
+    .p2 .p-img {
+
+        order: 2;
+
+    }
+
+    .p2 .text {
+
+        order: 1;
+        
+    }
+
+}
