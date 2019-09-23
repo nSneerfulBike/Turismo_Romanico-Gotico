@@ -159,6 +159,10 @@ body::-webkit-scrollbar-thumb {
         height: 350px;
     }
 
+}
+
+@media (orientation: portrait) {
+
     #filter-selector {
 
         width: 60%;
