@@ -159,6 +159,13 @@ body::-webkit-scrollbar-thumb {
         height: 350px;
     }
 
+    #filter-selector {
+
+        width: 60%;
+        left: 20%;
+
+    }
+
 }
 
 #ckbox-1 {
