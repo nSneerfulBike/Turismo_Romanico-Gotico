@@ -179,6 +179,11 @@ for (let el0 of all) {
                 arr.style.opacity = '1';
                 antir = setInterval(animSet_1, 20);
 
+                let _a = document.createElement('a');
+                _a.id = 'link-txt';
+                _a.target = 'blank';
+                document.getElementById('p-text').appendChild(_a);
+
             }
 
             // Animations
