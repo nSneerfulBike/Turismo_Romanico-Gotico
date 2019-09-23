@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+
+    font-family: 'Open Sans';
+    background-color: #242f3d;
+    color: #fafafa;
+
+}
+
+body::-webkit-scrollbar {
+
+    width: 5px;
+    background-color: #454545;
+    border-radius: 3px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+
+    width: 5px;
+    border-radius: 3px;
+    background-color: #d5d5d5;
+
+}
+
+.unselect {
+
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+}
+
+#container-chiese {
+
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.rows {
+
+    position: relative;
+    margin-top: 43.3px;
+    left: 5%;
+    width: 90%;
+    height: 50px;
+    display: inline-flex;
+
+    transition: transform 0.5s ease;
+
+}
+
+.cards {
+
+    margin-left: 1.6%;
+    margin-right: 1.6%;
+    width: 22.5%;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #242f3d;
+    border-radius: 15px;
+    border: 1px solid #f5f5f5;
+    text-align: center;
+    display: inline-table;
+
+}
+
+.cards:hover {
+
+    cursor: pointer;
+
+}
+
+h1.inner-txt {
+
+    font-size: 15px;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+@media (max-width: 1250px) {
+
+    h1.inner-txt {
+
+        font-size: 12px;
+
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    h1.inner-txt {
+
+        font-size: 10px;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    h1.inner-txt {
+
+        font-size: 8px;
+
+    }
+
+}
+
+#text-container {
+
+    position: absolute;
+    margin-bottom: 50px;
+    top: 240px;
+    left: 5%;
+    width: 90%;
+    height: 640px;
+    background-color: #242f3d;
+    border-radius: 30px;
+    border: 2px solid #f5f5f5;
+    transform: translate(-1px, 0);
+
+}
+
+#arrow {
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: rotate(180deg) translate(20px, -2px);
+    top: 210px;
+
+    transition: opacity 0.15s linear;
+
+    /*
+    first: 16%
+    second: 39%
+    third: 61%
+    fourth: 84%
+    */
+
+    left: 0;
+    opacity: 0;
+
+}
+
+@media (max-width: 800px) {
+
+    #arrow {
+
+        width: 40px;
+
+    }
+
+}
